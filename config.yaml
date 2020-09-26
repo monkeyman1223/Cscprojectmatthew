@@ -1,5 +1,5 @@
 ---
-title: "Hugo Zen theme"
+title: "Welcome to Matts website"
 baseURL: "https://example.org/"
 theme: "zen"
 languageCode: "en-GB"
@@ -10,9 +10,8 @@ paginate: 10
 paginatePath: "page"
 rssLimit: 20
 author:
-  name: "Your Name"
+  name: "Matthew Mills"
   url: "https://example.org/somepage"
-  avatar: "path/to/some-image.jpg"
 
 outputFormats:
   SearchIndex:
