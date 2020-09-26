@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="nojs" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>How to make a new Website with Hugo – Welcome to Matts website</title>
+<meta name="description" content="How to create a new website with hugo First thing you will need to do is open a terminal of some kind, for my examples i will be using git bash. Here is what it should …">
+<meta name="created" content="0001-01-01T00:00:00+0000">
+<meta name="modified" content="0001-01-01T00:00:00+0000">
+<meta name="author" content="Matthew Mills">
+<meta name="contact" content="info@example.org">
+<meta property="og:site_name" content="Welcome to Matts website">
+<meta property="og:title" content="How to make a new Website with Hugo">
+<meta property="og:url" content="https://example.org/documentation/hugo/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://example.org/apple-touch-icon.png">
+<meta name="generator" content="Hugo 0.74.3" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="canonical" href="https://example.org/documentation/hugo/">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="stylesheet" href="/css/mobile.2ab74aa64785dcab8114959e76ca140cf76207cd85989bc6d4fc3b12f734a09e.css" media="screen">
+<link rel="stylesheet" href="/css/styles.07de9722ae74190da91740ecb1e12bbfa31de324e29ab4972bdcc4131519528c.css">
+<link rel="stylesheet" href="/css/print.27fc184f8670f41a2690985390779e7b20335a8fadff8fa015cf9417ffe50c36.css" media="print">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "How to make a new Website with Hugo",
+    "datePublished": "0001-01-01T00:00:00Z",
+    "dateModified": "0001-01-01T00:00:00Z",
+    "url" : "https://example.org/documentation/hugo/",
+    "description": "How to create a new website with hugo First thing you will need to do is open a terminal of some kind, for my examples i will be using git bash. Here is what it should …",
+    "image" : "https://example.org/apple-touch-icon.png",
+    "author": {
+      "@type": "Person",
+      "name": "Matthew Mills"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://example.org/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Welcome to Matts website",
+      "logo" : {
+        "@type": "ImageObject",
+        "url": "https://example.org/apple-touch-icon.png"
+      },
+      "url": "https://example.org/"
+    }
+  }
+</script>
+
+<script src="/js/script-early.min.a8d899ac88f2a778985767b86ce681945e3fa2069c3c9efd17e5e5b594d3ba1f.js"></script>
+<script defer src="/js/lib/umbrella.min.93f3e506745965d532e586ea2a4e625cc9bb8ba34e9ba8f260f905727ee550b0.js"></script>
+<script defer src="/js/mobile.min.3a3510028bab9810834389725137cfa50f5d3231799ef9ac70769331fa59859a.js"></script>
+<script defer src="/js/script.min.f7f56769569fdf7a80d073b6775c6cd9ed8ae528864cd3f2aa1c8c3fe73f87ea.js"></script>
+
+
+</head>
+
+<body class="single-page">
+<div class="page layout__page layout__sidebar-second">
+<header class="header layout__header">
+<a href="/" title="Home" rel="home" class="header__logo"><img src="/images/logo.png" alt="Home" class="header__logo-image"></a>
+<h1 class="header__site-name">
+<a href="/" title="Home" class="header__site-link" rel="home"><span>Welcome to Matts website</span></a>
+</h1>
+<div class="region header__region">
+</div>
+</header>
+
+<nav class="main-menu layout__navigation">
+<h2 class="visually-hidden">Main menu</h2>
+<ul class="navbar">
+<li><a href="/">Home</a></li>
+<li><a href="/documentation/">Documentation</a></li>
+</ul>
+</nav>
+
+
+<main class="main layout__main">
+<article class="section-documentation single-view">
+<header>
+<h1 class="title title-submitted">How to make a new Website with Hugo</h1>
+<div class="submitted">
+<span class="author" itemprop="author">Matthew Mills</span> – <time class="created-date" datetime="0001-01-01T00:00:00Z">1 January, 0001</time>
+</div>
+</header>
+<div class="content">
+<h2 id="how-to-create-a-new-website-with-hugo">How to create a new website with hugo</h2>
+<p>First thing you will need to do is open a terminal of some kind, for my examples i will be using <code>git bash</code>.</p>
+<p>Here is what it should look like if you are using git bash:
+<img src="git_image.png" alt="a table"></p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Once you have your terminal of choice open you will also need to make sure you have <code>hugo</code> installed if you dont visit <code>https://gohugo.io/</code></p>
+<p>Once you have both a terminal and hugo installed we can begin with creating a new hugo website. first start off by finding a good location to store your website. i have chosen a folder within my documents that i created to store all of my repositories. to start you need to get your terminal into the desired place where you would like to keep your website. 
+<img src="cd_start.png" alt="a table"></p>
+<p>Once you have gotten yourself into that location we can start with the actual creating of the webiste, be sure to be thinking of a name that you would like to call your website. we will run the following code in order to use hugo to create the website.</p>
+<pre><code class="language-{sh}" data-lang="{sh}">hugo new --kind article projects/&lt;my-project&gt;
+</code></pre><p>This should produce the following output in your terminal:
+<img src="hugo_create.png" alt="a table"></p>
+<p>Once you have your website made you will need to get your terminal into the file you just created. 
+<img src="cd_project.png" alt="a table"></p>
+<p>Now that we have the basic structure of a website we should upload it to a github reposiory. lets create a new one by running the following code:
+<img src="git_init.png" alt="a table"></p>
+<p>Now lets add it to an empty git repository that i have already created.
+<img src="git_addrepo.png" alt="a table"></p>
+<p>At this point you have created a new website using hugo, and added your base outline to a new git repository. In my next part i will show how to get a theme into your newly created hugo website.</p>
+<h2 id="adding-a-theme">Adding A Theme</h2>
+<p>First you will need to find a theme that is to your liking, you can find some themes from <code>https://themes.gohugo.io/</code> I chose to go with the theme <code>https://themes.gohugo.io/hugo-theme-zen/</code> and is what i will be using to show as my example.</p>
+<p>Before we can bring the theme into your website we must navigate our terminal into the <code>themes</code> folder within your websites files.
+<img src="cd_theme.png" alt="a table"></p>
+<p>Now that we have put ourselves into the <code>themes</code> folder we can now begin to bring in the theme you have selected from github. Once you select the theme that you would like to use you need to copy the repository link that is provided. 
+<img src="git_theme.png" alt="a table"></p>
+<p>This is the part that can cause issues so be very careful on the next step. we will now clone the theme that you have selected into our website. we are going to be cloning the theme but as a sub-module.
+<img src="git_addsub.png" alt="a table"></p>
+<p>Now to make sure that we havent messed anything up lets backup to the main folder for your website and make sure everything is still there.
+<img src="cd_back.png" alt="a table">
+<img src="ls_project.png" alt="a table"></p>
+<p>At this point you have added a theme to your website. the folder that is now in your <code>themes</code> folder should look something along the lines of this:
+<img src="zen_doc.png" alt="a table"></p>
+<p>Most themes come with a example site that you can use to make sure the theme was installed right. in the next part i will show you how to setup the example site.</p>
+<h2 id="example-site">Example Site</h2>
+<p>At this point we have setup a new hugo website, created a git repoitory, and added a theme to your website. now we will go through the steps of setting up the provided example website provided by the theme.</p>
+<p>To start off we need to get our terminal into the example site folder within your theme.
+<img src="cd_themeex.png" alt="a table"></p>
+<p>Now that we are in the example site folder we can now take those files and bring them into your website files by copying them. 
+<img src="copy_example.png" alt="a table"></p>
+<p>now we have copied the files that are within the example site folder and placed them in their coresponding folder within your website. this is done by telling the terminal to place them in the directory that is 3 behind the current one which is represented by <code>../../..</code> which just so happens to be your main directory for your website.</p>
+<p>just to make sure we havent messed anything up and everything is where it should be lets go back to our main website folder and check.
+<img src="ls_main.png" alt="a table"></p>
+<p>Now all that is left to do is get hugo to serve up the website and see if you did everything correctly. 
+<img src="hugo_serve.png" alt="a table"></p>
+<p>this should produce a website at the following adress <code>http://localhost:1313/</code> and should look something along the lines of this if you are using the zen theme like me:
+<img src="hugo_servefinal.png" alt="a table"></p>
+
+
+</div>
+</article>
+</main>
+
+
+<aside class="sidebar layout__second-sidebar">
+<section>
+<h4 class="menu"><a href="/documentation/">Documentation</a></h4>
+<ul class="menu">
+<li><a href="/documentation/article/">Article about my project</a></li>
+<li><a href="/documentation/hugo/" class="active" aria-current="page">How to make a new Website with Hugo</a></li>
+</ul>
+</section>
+</aside>
+<footer class="footer layout__footer">
+<p><!-- raw HTML omitted --></p>
+<p>Powered by <a href="https://gohugo.io/">Hugo</a> and the <a href="https://github.com/frjo/hugo-theme-zen">Zen theme</a>.</p>
+
+</footer>
+
+</div>
+<div class="mobile-nav" dir="ltr">
+  <div class="mobile-nav__cover"></div>
+  <a href="#navigation" class="mobile-nav__toggle" aria-haspopup="true" role="button">Menu</a>
+  <div class="mobile-nav__sheet">
+    <div class="mobile-nav__region">
+    
+    </div>
+    <nav class="mobile-nav__main-menu">
+    <h2 class="visually-hidden">Main menu</h2>
+    <ul class="mobile-nav__navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/documentation/">Documentation</a></li>
+    </ul>
+    </nav>
+  </div>
+</div>
+</body>
+</html>

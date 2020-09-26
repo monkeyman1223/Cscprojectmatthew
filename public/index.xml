@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make the Web Fun Again on Welcome to Matts website</title>
+    <link>https://example.org/</link>
+    <description>Recent content in Make the Web Fun Again on Welcome to Matts website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Article about my project</title>
+      <link>https://example.org/documentation/article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/documentation/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to make a new Website with Hugo</title>
+      <link>https://example.org/documentation/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/documentation/hugo/</guid>
+      <description>&lt;h2 id=&#34;how-to-create-a-new-website-with-hugo&#34;&gt;How to create a new website with hugo&lt;/h2&gt;
+&lt;p&gt;First thing you will need to do is open a terminal of some kind, for my examples i will be using &lt;code&gt;git bash&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is what it should look like if you are using git bash:
+&lt;img src=&#34;git_image.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;Once you have your terminal of choice open you will also need to make sure you have &lt;code&gt;hugo&lt;/code&gt; installed if you dont visit &lt;code&gt;https://gohugo.io/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once you have both a terminal and hugo installed we can begin with creating a new hugo website. first start off by finding a good location to store your website. i have chosen a folder within my documents that i created to store all of my repositories. to start you need to get your terminal into the desired place where you would like to keep your website. 
+&lt;img src=&#34;cd_start.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once you have gotten yourself into that location we can start with the actual creating of the webiste, be sure to be thinking of a name that you would like to call your website. we will run the following code in order to use hugo to create the website.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{sh}&#34; data-lang=&#34;{sh}&#34;&gt;hugo new --kind article projects/&amp;lt;my-project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This should produce the following output in your terminal:
+&lt;img src=&#34;hugo_create.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once you have your website made you will need to get your terminal into the file you just created. 
+&lt;img src=&#34;cd_project.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now that we have the basic structure of a website we should upload it to a github reposiory. lets create a new one by running the following code:
+&lt;img src=&#34;git_init.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now lets add it to an empty git repository that i have already created.
+&lt;img src=&#34;git_addrepo.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;At this point you have created a new website using hugo, and added your base outline to a new git repository. In my next part i will show how to get a theme into your newly created hugo website.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-theme&#34;&gt;Adding A Theme&lt;/h2&gt;
+&lt;p&gt;First you will need to find a theme that is to your liking, you can find some themes from &lt;code&gt;https://themes.gohugo.io/&lt;/code&gt; I chose to go with the theme &lt;code&gt;https://themes.gohugo.io/hugo-theme-zen/&lt;/code&gt; and is what i will be using to show as my example.&lt;/p&gt;
+&lt;p&gt;Before we can bring the theme into your website we must navigate our terminal into the &lt;code&gt;themes&lt;/code&gt; folder within your websites files.
+&lt;img src=&#34;cd_theme.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now that we have put ourselves into the &lt;code&gt;themes&lt;/code&gt; folder we can now begin to bring in the theme you have selected from github. Once you select the theme that you would like to use you need to copy the repository link that is provided. 
+&lt;img src=&#34;git_theme.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is the part that can cause issues so be very careful on the next step. we will now clone the theme that you have selected into our website. we are going to be cloning the theme but as a sub-module.
+&lt;img src=&#34;git_addsub.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now to make sure that we havent messed anything up lets backup to the main folder for your website and make sure everything is still there.
+&lt;img src=&#34;cd_back.png&#34; alt=&#34;a table&#34;&gt;
+&lt;img src=&#34;ls_project.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;At this point you have added a theme to your website. the folder that is now in your &lt;code&gt;themes&lt;/code&gt; folder should look something along the lines of this:
+&lt;img src=&#34;zen_doc.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Most themes come with a example site that you can use to make sure the theme was installed right. in the next part i will show you how to setup the example site.&lt;/p&gt;
+&lt;h2 id=&#34;example-site&#34;&gt;Example Site&lt;/h2&gt;
+&lt;p&gt;At this point we have setup a new hugo website, created a git repoitory, and added a theme to your website. now we will go through the steps of setting up the provided example website provided by the theme.&lt;/p&gt;
+&lt;p&gt;To start off we need to get our terminal into the example site folder within your theme.
+&lt;img src=&#34;cd_themeex.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now that we are in the example site folder we can now take those files and bring them into your website files by copying them. 
+&lt;img src=&#34;copy_example.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;now we have copied the files that are within the example site folder and placed them in their coresponding folder within your website. this is done by telling the terminal to place them in the directory that is 3 behind the current one which is represented by &lt;code&gt;../../..&lt;/code&gt; which just so happens to be your main directory for your website.&lt;/p&gt;
+&lt;p&gt;just to make sure we havent messed anything up and everything is where it should be lets go back to our main website folder and check.
+&lt;img src=&#34;ls_main.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now all that is left to do is get hugo to serve up the website and see if you did everything correctly. 
+&lt;img src=&#34;hugo_serve.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;this should produce a website at the following adress &lt;code&gt;http://localhost:1313/&lt;/code&gt; and should look something along the lines of this if you are using the zen theme like me:
+&lt;img src=&#34;hugo_servefinal.png&#34; alt=&#34;a table&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
