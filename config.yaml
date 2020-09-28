@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Matts website"
-baseURL: "https://https://csc324projectmatthew.netlify.app//"
+baseURL: "https://example.org/"
 theme: "zen"
 languageCode: "en-GB"
 defaultContentLanguage: "en"
