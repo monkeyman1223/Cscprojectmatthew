@@ -39,3 +39,7 @@ click edit on the path variable in the top box. this is the paths that your syst
 
 once you get all of that done you should have hugo working in a terminal. you can make sure of this by running `hugo version` in any terminal this should produce something that looks like this:
  ![a table](hugo_version.png)
+
+ ## Article Dates
+
+ another issue that i have run into is for any dates that you would like to change for example at the begining of this article, there is so easy way to change that date. we looked for about an hour and a half and have not found an easy way to change the date even trying to just say the desired date in the front matter.
