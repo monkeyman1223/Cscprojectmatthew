@@ -39,7 +39,7 @@ Now lets add it to an empty git repository that i have already created.
 At this point you have created a new website using hugo, and added your base outline to a new git repository. In my next part i will show how to get a theme into your newly created hugo website.
 
 ## Adding A Theme
-First you will need to find a theme that is to your liking, you can find some themes from [https://themes.gohugo.io/] (https://themes.gohugo.io/) I chose to go with the theme [https://themes.gohugo.io/hugo-theme-zen/] (https://themes.gohugo.io/hugo-theme-zen/) and is what i will be using to show as my example.
+First you will need to find a theme that is to your liking, you can find some themes from [https://themes.gohugo.io/](https://themes.gohugo.io/) I chose to go with the theme [https://themes.gohugo.io/hugo-theme-zen/](https://themes.gohugo.io/hugo-theme-zen/) and is what i will be using to show as my example.
  
 Before we can bring the theme into your website we must navigate our terminal into the `themes` folder within your websites files.
 ![a table](cd_theme.png)
@@ -77,5 +77,5 @@ just to make sure we havent messed anything up and everything is where it should
 Now all that is left to do is get hugo to serve up the website and see if you did everything correctly. 
  ![a table](hugo_serve.png)
 
- this should produce a website at the following adress [http://localhost:1313/] (http://localhost:1313/) and should look something along the lines of this if you are using the zen theme like me:
+ this should produce a website at the following adress [http://localhost:1313/](http://localhost:1313/) and should look something along the lines of this if you are using the zen theme like me:
  ![a table](hugo_servefinal.png)
